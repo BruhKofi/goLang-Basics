@@ -15,6 +15,7 @@ func main() {
 	o.badgeNumber = 1000
 	fmt.Println(o.badgeNumber)
 	fmt.Println(o.run())
+	fmt.Println(run(12))
 }
 
 type person struct {
@@ -51,6 +52,13 @@ func (o *policeOfficer) walk() int {
 	return 20
 }
 
+//funct [param list][interface func name][interface func return type]
 func (o *policeOfficer) run() int {
 	return 50
+}
+
+//regular function
+//func [name][param][param list][return type]
+func run(s int) int {
+	return s
 }
